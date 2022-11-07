@@ -1,0 +1,234 @@
+
+
+body{
+   background-color:  hsl(226, 43%, 10%); 
+   font-family: Rubik sans;
+   display:flex;
+   height: 100vh;
+   align-items: center;
+   flex-direction: column;
+   
+}
+#daily{
+   color:white;
+}
+.main-container{
+margin:auto;
+width:800px;
+height:250px;
+display:flex;
+flex-direction: row;
+justify-content: space-between;
+
+}
+.profile-container{
+
+height:260px;
+width:170px;
+background-color:  hsl(246, 80%, 60%);
+border-radius: 10px;
+color:white;
+z-index: 1;
+font-family: Rubik-light;
+font-weight: 200;
+display:flex;
+flex-direction: column;
+}
+.profile-sub{
+z-index: -1;
+width: 170px;
+height:120px;
+display:flex;
+flex-direction: column;
+background-color:hsl(235, 46%, 20%);
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+color:hsl(235, 45%, 61%)
+}
+.profile-sub span{
+   margin:0px 0 0 14px;
+   font-family: rubik-light;
+}
+.profile-sub span:hover{
+   color:white
+}
+.flex{
+width: 170px;
+height:360px;
+margin-left:-45px    
+
+}
+.profile-container *{
+   margin:16px 0 0 14px;
+
+}
+.profile-container img{
+   width:50px;
+   height: 50px;
+   border-radius: 50%;
+ 
+}
+.time-div{
+margin-left:12px;
+flex-wrap: wrap;
+height: 500px;
+
+display:flex;
+flex-direction:column;
+width:90%;
+
+
+
+
+}
+.work{
+width:200px;
+background-color: hsl(15, 100%, 70%);
+height: 170px;
+
+
+border-radius: 10px;
+margin-bottom:10px;
+background-image: url(images/icon-work.svg);
+background-repeat:no-repeat;
+background-position: 130px 0px;
+background-size: 60px;
+z-index: 1;
+}
+.play{
+   width:200px;
+   height: 170px;
+   margin-bottom:10px;
+   border-radius: 10px;
+   background-image: url(images/icon-exercise.svg);
+background-repeat:no-repeat;
+background-position: 130px 0px;
+background-size: 60px;
+z-index: 1;
+background-color:hsl(145, 58%, 55%);
+   
+   }
+   .study{
+      width:200px;
+      height: 170px;
+     
+      border-radius: 10px;
+      margin-bottom:10px;
+      background-image: url(images/icon-play.svg);
+background-repeat:no-repeat;
+background-position: 130px 0px;
+background-size: 60px;
+z-index: 1;
+background-color: hsl(195, 74%, 62%) ;
+      }
+      .exercise{
+         width:200px;
+         height: 170px;
+         
+         border-radius: 10px;
+         margin-bottom:10px;
+         background-image: url(images/icon-social.svg);
+background-repeat:no-repeat;
+background-position: 130px 0px;
+background-size: 60px;
+z-index: 1;
+background-color: hsl(264, 64%, 52%);
+         
+         }
+         .social{
+            width:200px;
+            height: 170px;
+            
+            border-radius: 10px;
+            margin-bottom:10px;
+            background-image: url(images/icon-study.svg);
+            background-repeat:no-repeat;
+            background-position: 130px 0px;
+            background-size: 60px;
+            z-index: 1;
+            background-color: hsl(348, 100%, 68%);
+            }
+            .self-care{
+               width:200px;
+               height: 170px;
+              
+               border-radius: 10px;
+               margin-bottom:10px;
+               background-image: url(images/icon-self-care.svg);
+background-repeat:no-repeat;
+background-position: 130px 0px;
+background-size: 60px;
+z-index: 1;
+background-color:  hsl(43, 84%, 65%);
+               }
+ .contain-sub{
+margin-top: 29px;
+width:100%;
+height:140px;
+border-radius:12px;
+background-color:  hsl(235, 46%, 20%);
+
+ }
+ .contain-sub *{
+margin:19px 0 0 23px;
+color:white;
+font-family:Rubik-light ;
+ }
+ #prev{
+   color:hsl(236, 100%, 87%)
+ }
+ .contain-sub img{
+   float:right;
+   margin:-89px 10px 56px 0;
+   
+ }
+ @media screen and (max-width:375px) {
+   .time-div{
+      flex-wrap: nowrap;
+      width: 250px;
+
+   }
+   
+   .main-container{
+      flex-direction: column;
+      width:100%
+   }
+   .profile-container{
+      width:250px;
+    height: 140px;
+      /* width:400px */
+      flex-direction: row;
+      flex-wrap: wrap;
+      
+   }
+   .flex{
+      margin-left: 15px;
+    }
+    .profile-container *{
+      margin :10px 0 0 0px;
+    }
+    #name{
+      display:inline;
+      font-size: 23px;
+      margin-top:-39px;
+      margin-left: 49px;
+    }
+    .profile-container p{
+      margin-top:45px
+    }
+    .contain-sub {
+   width:250px;
+      margin-left:15px
+    }
+    .profile-sub{
+      flex-direction: row;
+      width:250px;
+      height:45px
+    }
+    .social,.play,.exercise,.study,.social,.self-care,.work{
+      width:250px;
+    }
+   }
+   .attribution { font-size: 11px; text-align: center; }
+   .attribution a { color: hsl(228, 45%, 44%); }
+ 
